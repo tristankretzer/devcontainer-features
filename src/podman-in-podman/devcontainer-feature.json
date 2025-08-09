@@ -1,0 +1,15 @@
+{
+  "name": "Podman in Podman",
+  "id": "podman-in-podman",
+  "version": "0.1.0",
+  "description": "A feature to install Podman inside a Podman container.",
+  "securityOpt": [
+    "label=disable"
+  ],
+  "containerEnv": {
+    "_CONTAINERS_USERNS_CONFIGURED": ""
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils"
+  ]
+}
