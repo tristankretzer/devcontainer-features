@@ -1,9 +1,9 @@
 #!/bin/sh
 set -e
 
-apt-get update
-apt-get upgrade -y
-apt-get install -y --no-install-recommends \
+apt-get update -q
+apt-get upgrade -yq
+DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
     podman \
     fuse-overlayfs \
     slirp4netns \
@@ -11,7 +11,7 @@ apt-get install -y --no-install-recommends \
 
 # Replace setuid bits by proper file capabilities for uidmap binaries.
 # See <https://github.com/containers/podman/discussions/19931>.
-apt-get install -y --no-install-recommends \
+DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
     libcap2-bin
 chmod 0755 /usr/bin/newuidmap /usr/bin/newgidmap
 setcap cap_setuid=ep /usr/bin/newuidmap
