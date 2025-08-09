@@ -18,7 +18,7 @@ setcap cap_setuid=ep /usr/bin/newuidmap
 setcap cap_setgid=ep /usr/bin/newgidmap
 apt-get autoremove --purge -y libcap2-bin
 
-if [ "${USE_PPA_IF_AVAILABLE}" = "true" ]; then
+if [ "${INSTALLPODMANDOCKER}" = "true" ]; then
   DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
     podman-docker
 fi;
