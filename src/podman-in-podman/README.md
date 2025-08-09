@@ -11,7 +11,11 @@ A feature to install Podman inside a Podman container.
 }
 ```
 
+## Options
 
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| installPodmanDocker | Install package podman-docker | boolean | false |
 
 
 
