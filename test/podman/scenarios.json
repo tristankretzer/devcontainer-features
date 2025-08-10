@@ -1,0 +1,10 @@
+{
+    "install_compose": {
+        "image": "debian:bookworm",
+        "features": {
+            "podman": {
+                "compose": true
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "id": "podman",
+    "version": "0.1.0",
+    "name": "Podman",
+    "description": "A feature to install Podman",
+    "documentationURL": "https://github.com/tristankretzer/devcontainer-features/tree/master/src/podman",
+    "licenseURL": "https://github.com/tristankretzer/devcontainer-features/blob/master/LICENSE",
+    "options": {
+        "compose": {
+            "type": "boolean",
+            "description": "Install Podman compose",
+            "default": false
+        }
+    },
+    "privileged": true,
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ],
+    "postStartCommand": {
+        "setup_subuid_and_subgid": "/usr/local/share/setup_subuid_and_subgid.sh",
+        "setup_user_podman_configuration": "/usr/local/share/setup_user_podman_configuration.sh"
+    }
+}
