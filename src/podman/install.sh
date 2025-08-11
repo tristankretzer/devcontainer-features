@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-PACKAGES_TO_INSTALL="fuse-overlayfs podman"
+PACKAGES_TO_INSTALL="fuse-overlayfs podman uidmap"
 if [ "${COMPOSE}" = "true" ]; then
   PACKAGES_TO_INSTALL="${PACKAGES_TO_INSTALL} podman-compose"
 fi
