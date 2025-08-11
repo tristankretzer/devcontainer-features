@@ -18,7 +18,9 @@
             ]
         }
     },
-    "features": {},
+    "features": {
+        "ghcr.io/tristankretzer/devcontainer-features/podman:0": {}
+    },
     "remoteUser": "node",
     "updateContentCommand": "npm install -g @devcontainers/cli"
 }
