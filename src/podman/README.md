@@ -16,6 +16,7 @@ A feature to install Podman
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | compose | Install Podman compose | boolean | false |
+| docker | Install Podman Docker (run `docker [...]` commands with Podman) | boolean | false |
 
 
 
