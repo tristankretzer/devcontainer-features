@@ -1,6 +1,6 @@
 {
     "id": "podman",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "name": "Podman",
     "description": "A feature to install Podman",
     "documentationURL": "https://github.com/tristankretzer/devcontainer-features/tree/master/src/podman",
@@ -9,6 +9,11 @@
         "compose": {
             "type": "boolean",
             "description": "Install Podman compose",
+            "default": false
+        },
+        "docker": {
+            "type": "boolean",
+            "description": "Install Podman Docker (run `docker [...]` commands with Podman)",
             "default": false
         }
     },

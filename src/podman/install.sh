@@ -6,10 +6,18 @@ if [ "${COMPOSE}" = "true" ]; then
   PACKAGES_TO_INSTALL="${PACKAGES_TO_INSTALL} podman-compose"
 fi
 
+if [ "${DOCKER}" = "true" ]; then
+  PACKAGES_TO_INSTALL="${PACKAGES_TO_INSTALL} podman-docker"
+fi
+
 apt-get update -q
 # shellcheck disable=SC2086
 DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -yq $PACKAGES_TO_INSTALL
 rm -rf /var/lib/apt/lists/*
+
+if [ "${DOCKER}" = "true" ]; then
+  touch /etc/containers/nodocker
+fi
 
 cp ./configurations/containers.conf /etc/containers
 
