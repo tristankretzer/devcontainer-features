@@ -15,4 +15,6 @@ check "Podman version" podman version
 
 check "Podman run hello-world" podman run hello-world | grep "Hello from Docker!"
 
+check "Podman run debian" podman run debian:bookworm echo "Container started!" | grep "Container started!"
+
 reportResults
