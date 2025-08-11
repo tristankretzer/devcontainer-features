@@ -1,6 +1,6 @@
 {
     "id": "podman",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "name": "Podman",
     "description": "A feature to install Podman",
     "documentationURL": "https://github.com/tristankretzer/devcontainer-features/tree/master/src/podman",
