@@ -1,7 +1,7 @@
 
 # REUSE (reuse)
 
-Installs REUSE tool for license compliance
+Installs the REUSE tool for checking license compliance.
 
 ## Example Usage
 
