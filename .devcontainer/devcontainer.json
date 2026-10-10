@@ -4,7 +4,9 @@
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
       "moby": false
-    }
+    },
+    "ghcr.io/tristankretzer/devcontainer-features/markdownlint-cli2:1": {},
+    "ghcr.io/tristankretzer/devcontainer-features/reuse:1": {}
   },
   "updateContentCommand": "npm install -g @devcontainers/cli"
 }
