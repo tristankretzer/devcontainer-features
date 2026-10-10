@@ -33,4 +33,4 @@ The `version` option takes either `latest` or an exact version as published on [
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/tristankretzer/devcontainer-features/blob/main/src/reuse/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/tristankretzer/devcontainer-features/blob/master/src/reuse/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
