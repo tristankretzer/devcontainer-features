@@ -1,0 +1,19 @@
+{
+  "name": "REUSE",
+  "id": "reuse",
+  "version": "1.0.0",
+  "description": "Installs REUSE tool for license compliance",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": [
+        "latest"
+      ],
+      "default": "latest",
+      "description": "REUSE tool version, either 'latest' or an exact version from PyPI"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/python:1"
+  ]
+}

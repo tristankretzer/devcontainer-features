@@ -1,0 +1,10 @@
+{
+  "pinned_version": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "reuse": {
+        "version": "6.1.2"
+      }
+    }
+  }
+}
