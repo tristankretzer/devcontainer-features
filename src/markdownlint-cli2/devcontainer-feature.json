@@ -1,8 +1,10 @@
 {
   "name": "markdownlint-cli2",
   "id": "markdownlint-cli2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Installs markdownlint-cli2 for linting Markdown files.",
+  "documentationURL": "https://github.com/tristankretzer/devcontainer-features/tree/master/src/markdownlint-cli2",
+  "licenseURL": "https://github.com/tristankretzer/devcontainer-features/blob/master/LICENSE",
   "options": {
     "version": {
       "type": "string",
