@@ -1,0 +1,19 @@
+{
+  "name": "markdownlint-cli2",
+  "id": "markdownlint-cli2",
+  "version": "1.0.0",
+  "description": "Installs markdownlint-cli2 for linting Markdown files.",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": [
+        "latest"
+      ],
+      "default": "latest",
+      "description": "markdownlint-cli2 version, either 'latest' or an exact version from npm"
+    }
+  },
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  }
+}
