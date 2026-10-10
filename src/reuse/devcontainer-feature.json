@@ -1,8 +1,10 @@
 {
   "name": "REUSE",
   "id": "reuse",
-  "version": "1.0.0",
-  "description": "Installs REUSE tool for license compliance",
+  "version": "1.0.1",
+  "description": "Installs the REUSE tool for checking license compliance.",
+  "documentationURL": "https://github.com/tristankretzer/devcontainer-features/tree/master/src/reuse",
+  "licenseURL": "https://github.com/tristankretzer/devcontainer-features/blob/master/LICENSE",
   "options": {
     "version": {
       "type": "string",
