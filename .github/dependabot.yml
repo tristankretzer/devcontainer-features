@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2026 Tristan Kretzer <tristan@kretzer.dev>
+#
+# SPDX-License-Identifier: MIT
+
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      github-actions:
+        patterns: ["*"]

@@ -1,0 +1,4 @@
+{
+  "name": "devcontainer-features",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu26.04"
+}

@@ -1,0 +1,62 @@
+# SPDX-FileCopyrightText: 2026 Tristan Kretzer <tristan@kretzer.dev>
+#
+# SPDX-License-Identifier: MIT
+
+name: Semi-Linear History
+
+on:
+  pull_request:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  semi-linear-history:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout Git commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+
+      - name: Fetch base branch
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: |
+          set -euo pipefail
+
+          git fetch --no-tags origin "+refs/heads/${BASE_REF}:refs/remotes/origin/${BASE_REF}"
+
+          echo "BASE_REF=${BASE_REF}" >> "$GITHUB_ENV"
+          echo "BASE_SHA=$(git rev-parse "refs/remotes/origin/${BASE_REF}")" >> "$GITHUB_ENV"
+          echo "HEAD_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Check branch is up-to-date with base
+        run: |
+          set -euo pipefail
+
+          if ! git merge-base --is-ancestor "${BASE_SHA}" "${HEAD_SHA}"; then
+            echo "::error::Branch is not up-to-date with '${BASE_REF}'. Please rebase."
+            echo
+            echo "Run:"
+            echo "  git fetch origin"
+            echo "  git rebase origin/${BASE_REF}"
+            exit 1
+          fi
+
+      - name: Check for merge commits in branch
+        run: |
+          set -euo pipefail
+
+          if git rev-list --merges "${BASE_SHA}..${HEAD_SHA}" | grep -q .; then
+            echo "::error::Branch contains merge commits. Please rebase instead of merging '${BASE_REF}' into the branch."
+            echo
+            echo "Typical fix:"
+            echo "  git fetch origin"
+            echo "  git rebase origin/${BASE_REF}"
+            exit 1
+          fi

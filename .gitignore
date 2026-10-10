@@ -1,0 +1,15 @@
+# SPDX-FileCopyrightText: 2026 Tristan Kretzer <tristan@kretzer.dev>
+#
+# SPDX-License-Identifier: MIT
+
+################
+### IntelliJ ###
+################
+
+.idea
+
+##############
+### VSCode ###
+##############
+
+.vscode

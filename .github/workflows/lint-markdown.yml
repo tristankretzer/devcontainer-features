@@ -1,0 +1,28 @@
+# SPDX-FileCopyrightText: 2026 Tristan Kretzer <tristan@kretzer.dev>
+#
+# SPDX-License-Identifier: MIT
+
+name: Lint Markdown Files
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout Git commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Lint Markdown Files
+        uses: DavidAnson/markdownlint-cli2-action@21c1be1b93ad9ed58fa840aacc3f279cde2a72ff # v24.2.0
+        with:
+          globs: |
+            **/*.md
