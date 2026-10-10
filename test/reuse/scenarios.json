@@ -6,5 +6,12 @@
         "version": "6.1.2"
       }
     }
+  },
+  "with_python_feature": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "ghcr.io/devcontainers/features/python:1": {},
+      "reuse": {}
+    }
   }
 }
