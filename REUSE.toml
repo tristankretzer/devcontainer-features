@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2026 Tristan Kretzer <tristan@kretzer.dev>
+#
+# SPDX-License-Identifier: MIT
+
+version = 1
+
+# Files that cannot carry a comment header: strict JSON files, and the feature
+# READMEs, which the release workflow regenerates from devcontainer-feature.json.
+# NOTES.md is listed as well, because its content is copied into the README and
+# a comment header would end up in the middle of the generated file.
+[[annotations]]
+path = [
+  "src/**/NOTES.md",
+  "src/**/README.md",
+  "src/**/devcontainer-feature.json",
+  "test/**/scenarios.json",
+]
+SPDX-FileCopyrightText = "Tristan Kretzer <tristan@kretzer.dev>"
+SPDX-License-Identifier = "MIT"
