@@ -16,6 +16,7 @@ A collection of features for [Dev Containers](https://containers.dev/).
 | Feature                                    | Description                                                                                               |
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [markdownlint-cli2](src/markdownlint-cli2) | Installs [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) for linting Markdown files. |
+| [opentofu](src/opentofu)                   | Installs [OpenTofu](https://opentofu.org/) for managing infrastructure as code.                           |
 | [reuse](src/reuse)                         | Installs the [REUSE tool](https://reuse.software/) for checking license compliance.                       |
 
 ## License

@@ -1,0 +1,18 @@
+{
+  "name": "OpenTofu",
+  "id": "opentofu",
+  "version": "1.0.0",
+  "description": "Installs OpenTofu for managing infrastructure as code.",
+  "documentationURL": "https://github.com/tristankretzer/devcontainer-features/tree/master/src/opentofu",
+  "licenseURL": "https://github.com/tristankretzer/devcontainer-features/blob/master/LICENSE",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": [
+        "latest"
+      ],
+      "default": "latest",
+      "description": "OpenTofu version, either 'latest' or an exact version from the OpenTofu APT repository"
+    }
+  }
+}
