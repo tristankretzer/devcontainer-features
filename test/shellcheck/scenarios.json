@@ -1,0 +1,10 @@
+{
+  "pinned_version": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "shellcheck": {
+        "version": "0.10.0"
+      }
+    }
+  }
+}
