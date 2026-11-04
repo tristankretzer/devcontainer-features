@@ -13,12 +13,13 @@ A collection of features for [Dev Containers](https://containers.dev/).
 
 ## Features
 
-| Feature                                    | Description                                                                                               |
-|--------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [actionlint](src/actionlint)               | Installs [actionlint](https://github.com/rhysd/actionlint) for checking GitHub Actions workflow files.    |
-| [markdownlint-cli2](src/markdownlint-cli2) | Installs [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) for linting Markdown files. |
-| [opentofu](src/opentofu)                   | Installs [OpenTofu](https://opentofu.org/) for managing infrastructure as code.                           |
-| [reuse](src/reuse)                         | Installs the [REUSE tool](https://reuse.software/) for checking license compliance.                       |
+| Feature                                    | Description                                                                                                   |
+|--------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| [actionlint](src/actionlint)               | Installs [actionlint](https://github.com/rhysd/actionlint) for checking GitHub Actions workflow files.        |
+| [cfn-lint](src/cfn-lint)                   | Installs [cfn-lint](https://github.com/aws-cloudformation/cfn-lint) for linting AWS CloudFormation templates. |
+| [markdownlint-cli2](src/markdownlint-cli2) | Installs [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) for linting Markdown files.     |
+| [opentofu](src/opentofu)                   | Installs [OpenTofu](https://opentofu.org/) for managing infrastructure as code.                               |
+| [reuse](src/reuse)                         | Installs the [REUSE tool](https://reuse.software/) for checking license compliance.                           |
 
 ## License
 
