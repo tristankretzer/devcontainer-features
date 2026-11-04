@@ -1,0 +1,18 @@
+{
+  "name": "actionlint",
+  "id": "actionlint",
+  "version": "1.0.0",
+  "description": "Installs actionlint for checking GitHub Actions workflow files.",
+  "documentationURL": "https://github.com/tristankretzer/devcontainer-features/tree/master/src/actionlint",
+  "licenseURL": "https://github.com/tristankretzer/devcontainer-features/blob/master/LICENSE",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": [
+        "latest"
+      ],
+      "default": "latest",
+      "description": "actionlint version, either 'latest' or an exact version from the actionlint GitHub releases"
+    }
+  }
+}
