@@ -21,6 +21,7 @@ A collection of features for [Dev Containers](https://containers.dev/).
 | [opentofu](src/opentofu)                   | Installs [OpenTofu](https://opentofu.org/) for managing infrastructure as code.                               |
 | [reuse](src/reuse)                         | Installs the [REUSE tool](https://reuse.software/) for checking license compliance.                           |
 | [shellcheck](src/shellcheck)               | Installs [ShellCheck](https://www.shellcheck.net/) for linting shell scripts.                                 |
+| [zizmor](src/zizmor)                       | Installs [zizmor](https://docs.zizmor.sh/) for finding security issues in GitHub Actions workflows.           |
 
 ## License
 

@@ -1,0 +1,17 @@
+{
+  "pinned_version": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "zizmor": {
+        "version": "1.31.1"
+      }
+    }
+  },
+  "with_python_feature": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "ghcr.io/devcontainers/features/python:1": {},
+      "zizmor": {}
+    }
+  }
+}

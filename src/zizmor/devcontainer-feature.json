@@ -1,0 +1,21 @@
+{
+  "name": "zizmor",
+  "id": "zizmor",
+  "version": "1.0.0",
+  "description": "Installs zizmor for finding security issues in GitHub Actions workflows.",
+  "documentationURL": "https://github.com/tristankretzer/devcontainer-features/tree/master/src/zizmor",
+  "licenseURL": "https://github.com/tristankretzer/devcontainer-features/blob/master/LICENSE",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": [
+        "latest"
+      ],
+      "default": "latest",
+      "description": "zizmor version, either 'latest' or an exact version from PyPI"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/python:1"
+  ]
+}
