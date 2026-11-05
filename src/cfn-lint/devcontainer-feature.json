@@ -1,0 +1,21 @@
+{
+  "name": "cfn-lint",
+  "id": "cfn-lint",
+  "version": "1.0.0",
+  "description": "Installs cfn-lint for linting AWS CloudFormation templates.",
+  "documentationURL": "https://github.com/tristankretzer/devcontainer-features/tree/master/src/cfn-lint",
+  "licenseURL": "https://github.com/tristankretzer/devcontainer-features/blob/master/LICENSE",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": [
+        "latest"
+      ],
+      "default": "latest",
+      "description": "cfn-lint version, either 'latest' or an exact version from PyPI"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/python:1"
+  ]
+}

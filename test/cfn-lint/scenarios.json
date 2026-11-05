@@ -1,0 +1,17 @@
+{
+  "pinned_version": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "cfn-lint": {
+        "version": "1.57.2"
+      }
+    }
+  },
+  "with_python_feature": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "ghcr.io/devcontainers/features/python:1": {},
+      "cfn-lint": {}
+    }
+  }
+}
