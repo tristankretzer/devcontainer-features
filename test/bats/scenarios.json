@@ -1,0 +1,10 @@
+{
+  "pinned_version": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "bats": {
+        "version": "1.13.0"
+      }
+    }
+  }
+}
