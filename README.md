@@ -20,6 +20,7 @@ A collection of features for [Dev Containers](https://containers.dev/).
 | [markdownlint-cli2](src/markdownlint-cli2) | Installs [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) for linting Markdown files.     |
 | [opentofu](src/opentofu)                   | Installs [OpenTofu](https://opentofu.org/) for managing infrastructure as code.                               |
 | [reuse](src/reuse)                         | Installs the [REUSE tool](https://reuse.software/) for checking license compliance.                           |
+| [shellcheck](src/shellcheck)               | Installs [ShellCheck](https://www.shellcheck.net/) for linting shell scripts.                                 |
 
 ## License
 
