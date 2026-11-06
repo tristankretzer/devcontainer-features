@@ -16,6 +16,7 @@ A collection of features for [Dev Containers](https://containers.dev/).
 | Feature                                    | Description                                                                                                   |
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | [actionlint](src/actionlint)               | Installs [actionlint](https://github.com/rhysd/actionlint) for checking GitHub Actions workflow files.        |
+| [age](src/age)                             | Installs [age](https://age-encryption.org/) for encrypting files.                                             |
 | [bats](src/bats)                           | Installs [Bats](https://github.com/bats-core/bats-core) for testing shell scripts.                            |
 | [cfn-lint](src/cfn-lint)                   | Installs [cfn-lint](https://github.com/aws-cloudformation/cfn-lint) for linting AWS CloudFormation templates. |
 | [markdownlint-cli2](src/markdownlint-cli2) | Installs [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) for linting Markdown files.     |

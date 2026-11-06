@@ -1,0 +1,10 @@
+{
+  "pinned_version": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "age": {
+        "version": "1.3.1"
+      }
+    }
+  }
+}
